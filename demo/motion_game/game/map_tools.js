@@ -27,7 +27,7 @@ Map_tools = {
                   bricks[i] = new Array(box_x);
                   for (j=0; j <box_x; j++) {
                     var random_integer = Math.random()*12|0;
-                    bricks[i][j] = random_integer;
+                    bricks[i][j] = 0;//random_integer;
                   }
                 }
               };
