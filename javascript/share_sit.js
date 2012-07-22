@@ -1,5 +1,5 @@
 var sites = [
-  { name : "体感游戏", url : "http://mrxx.github.com", img : "http://mrxx.github.com/image/game.png" },
+  { name : "体感游戏", url : "http://mrxx.github.com", img : "http://mrxx.github.com/images/motion_game.png" },
 ];
 
 hostRegexp = new RegExp(location.host);
