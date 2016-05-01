@@ -13,6 +13,6 @@ description: "Html5 7x7 消除方块游戏"
 ## Html5 7x7 消除方块游戏
 
 * 拖动方块四个连成一条线即可消除方块，增加分数
-* [源码](https://github.com/mrxx/7x7)
+* [源码](https://github.com/mrxx/7x7_game)
 
 [DEMO](/demo/7x7)
