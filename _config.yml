@@ -1,0 +1,28 @@
+# Site settings ...
+uri: mrxx.github.io
+url: https://mrxx.github.io
+name: Tony
+title: Weekend project page for Tony
+email: kids.lee@gmail.com
+author: mrxx
+baseurl: ""
+timezone: Asia/Shanghai
+keywords: "mrxx project"
+description: "This is Tony's weekend project page"
+social_username: mrxx
+secondary_social_username: mrxx
+
+# Build settings ...
+sass:
+  style: compressed
+markdown: kramdown
+encoding: "utf-8"
+paginate: 5
+permalink: "write/:year/:month/:day/:title/"
+paginate_path: "/page/:num/"
+
+# Plugins ...
+gems:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jemoji

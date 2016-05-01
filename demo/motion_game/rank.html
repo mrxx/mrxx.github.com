@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+	<title>Motion Sensing Game demo</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<script src="javascript/jquery.1.7.2.js"></script>
+  <script type="text/javascript" src="bootstrap/js/bootstrap-modal.js"></script>
+	<script type="text/javascript" src="javascript/functions.js"></script>
+	<script type="text/javascript" >
+      $(function(){
+              $.getJSON("http://kaopulove.com/rank/rank_list/new/jsoncallback=?",
+                  function(data){
+                  var str = "";
+                  $.each(data,function(i){
+                      str += '<table><tr> \
+                          <td width="350px">\
+                          <img src="http://kaopulove.com/'+data[i].avatar+'">\
+                          </td> <td>\
+                              <div id="share_text">\
+                                  <h2>Mark:2012</h2>\
+                                  <h2>Round:10</h2>\
+                                 </div>\
+                          </td></tr></table>';
+                      console.log(data[i]);
+                      });
+                  $("#rank_list").append(str);
+                  });
+ 				});
+	</script>
+  <!--
+  :)
+  -->
+    </head>
+    <body>
+	    <div class="container" style="width:1200px;">
+		    <div class="container-fluid">
+			    <div class="row-fluid">
+				    <div class="span4"  style="width:350px;background-color:#d3d7d4;padding:10px;height:100%;">
+                <h3>About</h3> 
+                         <div>
+                    <ol style="">
+                        <li>此demo只支持Chrome浏览器最新版本</li>
+                        <li>在明亮的环境中运行效果最好</li>
+                        <li>在高配置的机器上运行效果最好</li>
+
+                        <li>自定义地图 ：<a href="maptools.html" target="_blank">maptools.html</a></li>
+                        <li>Hack it <a href="https://github.com/mrxx/js_motion_game" target="_blank">https://github.com/mrxx/js_motion_game</a>
+            <li>联系我[kids.lee at gmail.com]</li>
+
+</li>
+                    <ol>
+                                                        </div>
+                           				    </div>
+				    <div id="rank_list" class="span7" style="height:100%;background-color:#f5f4f0;">
+
+				    </div>
+			    </div>
+		    </div>
+	    </div>
+
+      <script type="text/javascript">
+
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-33569319-1']);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+           var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+           ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+           var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+           })();
+
+</script>
+    </body>
+</html>
